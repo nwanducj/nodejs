@@ -1,0 +1,43 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "boilerplate for a node js app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-server": "node app.js",
+    "start:dev": "nodemon app.js",
+    "git_push": "node -e \"const mssg = ' ' + process.argv[1]; require('child_process').execSync('git add . && git commit -m \\\"' + mssg + '\\\" && git push -u origin master', { stdio:[0, 1, 2] } ) \""
+  },
+  "author": "Iwatannaye",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.4",
+    "aws-sdk": "^2.865.0",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "celebrate": "^13.0.4",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "cryptr": "^6.0.2",
+    "dayjs": "^1.10.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^3.6.5",
+    "mongoose": "^5.12.0",
+    "mongoose-paginate-v2": "^1.3.17",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "node-cron": "^3.0.0",
+    "nodemon": "^2.0.7",
+    "uniqid": "^5.3.0",
+    "winston": "^3.3.3"
+  }
+}
